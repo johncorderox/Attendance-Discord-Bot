@@ -24,6 +24,7 @@ class CreateRosterTable < ActiveRecord::Migration[5.2]
     end
   end
 end
+
 CreateRosterTable.migrate(:up)
 
 @bot.command(:roster,
@@ -181,6 +182,17 @@ end
     else
       return event.respond "User is not on the roster!"
     end
+  end
+end
+
+@bot.command(:reset,
+             description: "Resets every member's status to not_set to reapply the attendance",
+             usage: "+reset") do |event|
+  Roster.all.update(status: "not_set")
+  event.channel.send_embed do |embed|
+    embed.colour = "#0275d8"
+    embed.title = "Attendance Update!"
+    embed.description = "The roster has been reset!"
   end
 end
 
