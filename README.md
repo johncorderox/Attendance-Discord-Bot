@@ -3,3 +3,12 @@ A Discord bot used for keeping track of gaming rosters, school events, or whatev
 
 This script is currently in development in v1.0 to keep me busing during lockdown. Happy gaming 💻
 
+
+
+## To Do
+- Order roster by Yes No Maybe Not-Set
+- Create Help Menu
+- Refactor like hell 
+- Create Commands for +reset +pmremind 
+- icon & banner
+- deploy to heroku 
