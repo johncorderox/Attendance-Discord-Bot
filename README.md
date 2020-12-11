@@ -6,7 +6,6 @@ This script is currently in development in v1.0 to keep me busing during lockdow
 
 
 ## To Do
-- Order roster by Yes No Maybe Not-Set
 - Create Help Menu
 - Refactor like hell 
 - Create Commands for +reset +pmremind 
