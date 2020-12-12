@@ -211,13 +211,6 @@ end
                   `+yes` - Sets your/discord_user status to Yes
                   `+no` - Sets your/discord_user status to No
                   `+maybe` - Sets your/discord_user status to Maybe"
-                 # embed.add_field name: "+roster", value: "`+roster` - Displays the current Roster."
-                 # embed.add_field name: "+add", value: "`+add <@discord_user>` - Add a Discord User to the Roster."
-                 # embed.add_field name: "+remove", value: "`+remove <@discord_user>` - Removes a Discord User to the Roster."
-                 # embed.add_field name: "+reset", value: "`+reset` - Resets every member's status on the roster to Not Set."
-                 # embed.add_field name: "+yes / +yes @discord_user", value: "`+yes / +yes <@discord_user>` - Sets your/discord_user status to Yes"
-                 # embed.add_field name: "+no / +no @discord_user", value: "`+no / +no <@discord_user>` - Sets your/discord_user status to No"
-                 # embed.add_field name: "+maybe / +maybe @discord_user", value: "`+maybe / +maybe <@discord_user>` - Sets your/discord_user status to Maybe"
                end
 end
 
