@@ -15,17 +15,17 @@ ActiveRecord::Base.establish_connection(
 class Roster < ActiveRecord::Base
 end
 
-# class CreateRosterTable < ActiveRecord::Migration[5.2]
-#   def change
-#     create_table :rosters do |t|
-#       t.string :discord_id
-#       t.string :username
-#       t.string :status, default: "not_set"
-#     end
-#   end
-# end
+class CreateRosterTable < ActiveRecord::Migration[5.2]
+  def change
+    create_table :rosters do |t|
+      t.string :discord_id
+      t.string :username
+      t.string :status, default: "not_set"
+    end
+  end
+end
 
-# CreateRosterTable.migrate(:up)
+CreateRosterTable.migrate(:up)
 
 @bot.command(:roster,
              description: "#",
